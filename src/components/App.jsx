@@ -9,13 +9,11 @@ export default class Application extends Component {
     render() {
         return (
             <BrowserRouter>
-                <main className='Application'>
-                    <Switch>
-                        <Route exact path='/' component={Counter} />
-                        <Route path='/search' component={Search} />
-                        <Route component={NotFound} />
-                    </Switch>
-                </main>
+                <Switch>
+                    <Route exact path='/' component={Counter} />
+                    <Route path='/search' component={Search} />
+                    <Route component={NotFound} />
+                </Switch>
             </BrowserRouter>
         );
     }
