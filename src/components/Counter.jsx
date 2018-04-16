@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Counter extends Component {
     state = {
-        count: 100
+        count: 0
     };
 
     increment = () => {
@@ -30,17 +31,22 @@ export default class Counter extends Component {
             <section className='Counter'>
                 <h1> Count: {count} </h1>{" "}
                 <button onClick={this.increment} className='full-width'>
-                    {" "}
-                    Increment{" "}
-                </button>{" "}
+                    Increment
+                </button>
                 <button onClick={this.decriment} className='full-width'>
-                    {" "}
-                    Decrement{" "}
-                </button>{" "}
+                    Decrement
+                </button>
                 <button onClick={this.reset} className='full-width'>
-                    {" "}
-                    Reset{" "}
-                </button>{" "}
+                    Reset
+                </button>
+                <div>
+                    <Link
+                        to='/search'
+                        style={{ display: "block", marginTop: "30px" }}
+                    >
+                        Search
+                    </Link>
+                </div>
             </section>
         );
     }

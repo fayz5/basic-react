@@ -17,7 +17,7 @@
     },
     "rules": {
         "import/extensions": ["warn", { "jsx": "never", "js": "never" }],
-        "react/jsx-indent": "off",
+
         "arrow-parens": ["error", "always"],
         "semi": ["error", "always"],
         "curly": "error",
@@ -31,7 +31,9 @@
         "prefer-spread": "error",
         "prefer-template": "error",
         "require-yield": "error",
-        "indent": ["error", 4],
+        "indent": ["warn", 4],
+        "react/jsx-indent": ["off", 2],
+        "react/jsx-indent-props": ["off", 2],
         "max-len": 0,
         "require-jsdoc": 0,
         "linebreak-style": 0,

@@ -16,7 +16,8 @@ const config = {
     devServer: {
         contentBase: BUILD_DIR,
         compress: true,
-        port: 9000
+        port: 8000,
+        historyApiFallback: true
     },
     module: {
         rules: [
