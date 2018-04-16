@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Counter extends Component {
     state = {
@@ -50,9 +50,9 @@ export default class Counter extends Component {
                 <div>
                     <Link
                         to='/search'
-                        style={{ display: "block", marginTop: "30px" }}
+                        style={{ display: 'block', marginTop: '30px' }}
                     >
-                        Goto Search >>
+                        {'Goto Search >>'}
                     </Link>
                 </div>
             </section>

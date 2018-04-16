@@ -1,6 +1,6 @@
 {
     "root": true,
-    "extends": ["standard-jsx"],
+    "extends": ["airbnb", "prettier", "prettier/react"],
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 6,
@@ -16,8 +16,8 @@
         }
     },
     "rules": {
-        "import/extensions": ["warn", { "jsx": "never", "js": "never" }],
-
+        "quotes": ["warn", "single"],
+        "jsx-quotes": ["warn", "prefer-single"],
         "arrow-parens": ["error", "always"],
         "semi": ["error", "always"],
         "curly": "error",
@@ -32,12 +32,20 @@
         "prefer-template": "error",
         "require-yield": "error",
         "indent": ["warn", 4],
-        "react/jsx-indent": ["off", 2],
-        "react/jsx-indent-props": ["off", 2],
         "max-len": 0,
         "require-jsdoc": 0,
         "linebreak-style": 0,
-        "no-extend-native": 0
+        "no-extend-native": 0,
+        "react/jsx-indent": ["off", 2],
+        "react/jsx-indent-props": ["off", 2],
+        "import/extensions": ["warn", { "jsx": "never", "js": "never" }],
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": ["Link"],
+                "specialLink": ["to"]
+            }
+        ]
     },
     "env": {
         "browser": true,
