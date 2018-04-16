@@ -28,23 +28,31 @@ export default class Counter extends Component {
     render() {
         const { count } = this.state;
         return (
-            <section className='Counter'>
-                <h1> Count: {count} </h1>{" "}
-                <button onClick={this.increment} className='full-width'>
-                    Increment
-                </button>
-                <button onClick={this.decriment} className='full-width'>
-                    Decrement
-                </button>
-                <button onClick={this.reset} className='full-width'>
-                    Reset
-                </button>
+            <section>
+                <h1> Count: {count} </h1>
+                <div className='row btn-group' role='group'>
+                    <button
+                        onClick={this.increment}
+                        className='btn btn-success'
+                    >
+                        Increment
+                    </button>
+                    <button
+                        onClick={this.decriment}
+                        className='btn btn-warning'
+                    >
+                        Decrement
+                    </button>
+                    <button onClick={this.reset} className='btn btn-danger'>
+                        Reset
+                    </button>
+                </div>
                 <div>
                     <Link
                         to='/search'
                         style={{ display: "block", marginTop: "30px" }}
                     >
-                        Search
+                        Goto Search >>
                     </Link>
                 </div>
             </section>
