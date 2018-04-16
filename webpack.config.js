@@ -13,6 +13,11 @@ const config = {
     resolve: {
         extensions: [".js", ".jsx", ".json"]
     },
+    devServer: {
+        contentBase: BUILD_DIR,
+        compress: true,
+        port: 9000
+    },
     module: {
         rules: [
             {
