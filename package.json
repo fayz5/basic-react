@@ -1,7 +1,7 @@
 {
     "name": "basic-react-app",
     "version": "1.0.0",
-    "description": "Basci React App",
+    "description": "Basic React App",
     "main": "index.js",
     "scripts": {
         "watch": "webpack -d --watch",
