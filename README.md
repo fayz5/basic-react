@@ -1,1 +1,1 @@
-## Basic React Todo App
+## Basic React App
